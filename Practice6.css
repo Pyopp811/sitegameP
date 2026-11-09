@@ -1,0 +1,204 @@
+* {
+	margin: 6px;
+	padding: 4px;
+	box-sizing: border-box;
+}
+
+:root {
+	--main-color: #1e1524;
+    --bg-color: #5b1387;
+}
+
+body {
+    background-color: var(--bg-color);
+	color: var(--main-color);
+	font-family: Arial, sans-serif;
+    background: radial-gradient(circle, transparent 20%, #5b1387 20%, #5b1387 80%, transparent 80%, transparent) 0% 0% / 56px 56px, radial-gradient(circle, transparent 20%, #5b1387 20%, #5b1387 80%, transparent 80%, transparent) 28px 28px / 56px 56px, linear-gradient(#b895cf 2.5px, transparent 2.5px) 0px -1.25px / 28px 28px, linear-gradient(90deg, #b895cf 2.5px, #5b1387 2.5px) -1.25px 0px / 28px 28px #5b1387;
+    background-size: 56px 56px, 56px 56px, 28px 28px, 28px 28px;
+    background-color: #5b1387;
+}	
+
+.container {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 20px;
+	position: relative;
+}
+
+.card:has(img) {
+	border: 3px solid var(--main-color);
+}
+
+.card {
+	padding: 20px;
+	border-radius: 15px;
+	background-color: #9351bd;
+	max-width: 350px;
+	border: 3px solid var(--main-color);
+	overflow: hidden;
+}
+
+.card h2::before {
+	content: "➤";
+	color: var(--main-color);
+	margin-right: 10px;
+}
+
+img {
+	width: 150px;
+	height: 150px;
+	object-fit: cover;  
+	display: block;
+	border-radius: 50%;
+	outline: 2px solid var(--main-color);
+	outline-offset: -4px;
+}
+
+img:hover {
+	transform: scale(1.03);
+	cursor: pointer;
+}
+
+.card:focus-within {
+	box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+input {
+	border-radius: 8px;
+	outline: none;
+	border: 2px solid var(--main-color);
+	box-shadow: none;
+	outline-offset: -4px;
+	background-color: #b895cf;
+	padding: 10px;
+}
+
+input::placeholder {
+	font-size: 12px;
+}
+
+.btn {
+	border-radius: 8px;
+	background-color: #b895cf;
+	color: var(--main-color);
+	padding: 10px;
+	box-shadow: none;
+	outline: none;
+}
+
+.btn:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+.btn:active {
+	transform: scale(0.9);
+	cursor: pointer;
+}
+
+::selection {
+	background-color: #debdf2;
+	color: var(--bg-color);
+}
+
+.card2 {
+	padding: 20px;
+	border-radius: 15px;
+	background-color: #300b47;
+	max-width: 350px;
+	border: 3px solid var(--main-color);
+	overflow: hidden;
+	color: #b895cf;
+}
+
+.card:hover {
+	transform: scale(1.02);
+	box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.btn2 {
+	border-radius: 8px;
+	background-color: #b895cf;
+	color: var(--main-color);
+	padding: 10px;
+	box-shadow: none;
+	outline: none;
+}
+
+.btn2:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+.btn:active {
+	transform: scale(0.9);
+}
+
+.card2:hover {
+	transform: scale(1.02);
+	box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.btn, .btn2 {
+	margin-top: auto;
+} 
+
+.card, .card2 {
+	display: flex;
+	flex-direction: column;
+}
+
+.card2 { 
+	align-self: flex-start;
+}
+
+.logo-wrapper {
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.logo {
+	width: 200px;
+	height: auto;
+}
+
+.history {
+	padding: 20px;
+	border-radius: 15px;
+	background-color: #300b47; 
+	max-width: 1000px;
+	border: 3px solid var(--main-color);
+	color: #b895cf;
+	width: 100%;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.history-wrapper {
+	width: 100%;
+	position:absolute;
+	top: 550px;
+	left: 10px;
+	display: flex;
+
+}
+
+.logo:hover{
+	transform: scale(1.02);
+	box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.history:hover{
+	transform: scale(1.02);
+	box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.history h2::after{
+	content: "⤵︎";
+	color: #b895cf;
+	margin-left: 10px;
+}
