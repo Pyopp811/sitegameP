@@ -204,37 +204,7 @@ input::placeholder {
 }
 
 @media (max-width: 768px) {
-	.container{
-		flex-direction: column;
-		align-items: center;
-		padding: 10px;
-		gap: 20px;
-	}
-
-	.card, .card2 {
-		width: 100%;
-		max-width: 400px;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-
-	.logo-wrapper {
-		position: relative;
-		top: auto;
-		left: auto;
-		width: 100%;
-		margin-top: 30px;
-		display: flex;
-		justify-content: center;
-	}
-
-	.history {
-		width: 100%;
-		max-width: 400px;
-	}
-
-	img {
-		max-width: 100%;
-		height: auto;
+	body {
+		background-color: chartreuse !important;
 	}
 }
