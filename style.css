@@ -212,19 +212,9 @@ input::placeholder {
 		gap: 20px;
 	}
 
-	img{
-		width: 150px;
-	    height: 150px;
-     	object-fit: cover;  
-    	display: block;
-    	border-radius: 50%;
-	    outline: 2px solid var(--main-color);
-	    outline-offset: -4px;
-	}
-
 	.card, .card2 {
 		width: 100%;
-		max-width: 400px;
+		max-width: 370px;
 		margin: 0 auto;
 		box-sizing: border-box;
 	}
@@ -233,19 +223,35 @@ input::placeholder {
 		position: relative;
 		top: auto;
 		left: auto;
+		margin: 20px auto;
 		width: 100%;
-		margin-top: 30px;
 		display: flex;
 		justify-content: center;
 	}
 
-	.history {
-		width: 100%;
-		max-width: 400px;
+	.logo{
+		width: 100px;
+		height: auto;
 	}
 
-	img {
-		max-width: 100%;
-		height: auto;
-}
+	.history {
+		width: 100%;
+		max-width: 350px;
+	}
+
+	.history-wrapper{
+		position: relative;
+		top: auto;
+		left: auto;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin-top: 20px;
+	}
+
+	.card img, .card2 img{
+		width: 150px;
+		height: 150px;
+		object-fit: cover;
+	}
 }
