@@ -86,15 +86,16 @@ input::placeholder {
 	padding: 10px;
 	box-shadow: none;
 	outline: none;
+	transition: all 0.3s ease;
 }
 
 .btn:hover {
-	transform: scale(1.1);
+	transform: scale(1.05);
 	cursor: pointer;
 }
 
 .btn:active {
-	transform: scale(0.9);
+	transform: scale(0.95);
 	cursor: pointer;
 }
 
@@ -209,6 +210,16 @@ input::placeholder {
 		align-items: center;
 		padding: 10px;
 		gap: 20px;
+	}
+
+	img{
+		width: 150px;
+	    height: 150px;
+     	object-fit: cover;  
+    	display: block;
+    	border-radius: 50%;
+	    outline: 2px solid var(--main-color);
+	    outline-offset: -4px;
 	}
 
 	.card, .card2 {
